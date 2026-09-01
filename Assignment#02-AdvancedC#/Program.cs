@@ -87,6 +87,8 @@ namespace Assignment_02_AdvancedC_
 
             #region Q4) => Task 03 Custom Report Generator(3.1 Print Reports)
 
+            // Action<Product> is used because we perform an action on each product without returning a value.
+
             //Action<List<Product>> PrintReport = Product.ShortReport;
             //PrintReport(catalog);
 
@@ -98,6 +100,8 @@ namespace Assignment_02_AdvancedC_
             #endregion
 
             #region Q5) => Task 03 Custom Report Generator(3.2 Transform Products)
+
+            // Func<Product, string> is used because each product is transformed into a string.
 
             //// Scenario 3
 
@@ -121,8 +125,10 @@ namespace Assignment_02_AdvancedC_
 
             #region Q6) => Task 03 Custom Report Generator(3.3 Filter Products)
 
+            // Predicate<Product> is used because we need to test a condition and return true or false.
+
             //List<Product> lowStockProducts = Product.FilterProducts(catalog, product => product.Stock < 20);
-            
+
             //Console.WriteLine("--- Low Stock Alert ---");
 
             //foreach (Product product in lowStockProducts)
