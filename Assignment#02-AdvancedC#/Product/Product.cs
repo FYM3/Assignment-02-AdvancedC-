@@ -26,6 +26,22 @@ namespace Assignment_02_AdvancedC_.product
             return Listproducts;
         }
 
+        public static void ShortReport(List<Product> products)
+        {
+            Console.WriteLine("--- Short Report ---");
+
+            foreach(Product pro in products)
+                Console.WriteLine($"{pro.Name} - ${pro.Price}");
+        }
+
+        public static void DetailedReport(List<Product> products)
+        {
+            Console.WriteLine("--- Detailed Report ---");
+
+            foreach (Product pro in products)
+                Console.WriteLine($"[{pro.Category}] {pro.Name} | Price:${pro.Price} | Stock:{pro.Stock}");
+        }
+
         //public static bool IsElectronics(Product product) => (product.Category == "Electronics") ? true : false;
         //public static bool IsCheaperThan50(Product product) => (product.Price < 50 && product.Price > 0) ? true : false;
         //public static bool IsInStock(Product product) => (product.Stock > 0) ? true : false;

@@ -84,6 +84,18 @@ namespace Assignment_02_AdvancedC_
 
             #endregion
 
+            #region Q4) => Task 03 Custom Report Generator(3.1 Print Reports)
+
+            //Action<List<Product>> PrintReport = Product.ShortReport;
+            //PrintReport(catalog);
+
+            //Console.WriteLine('\n');
+
+            //Action<List<Product>> PrintDetailed = Product.DetailedReport;
+            //PrintDetailed(catalog);
+
+            #endregion
+
         }
     }
 }
