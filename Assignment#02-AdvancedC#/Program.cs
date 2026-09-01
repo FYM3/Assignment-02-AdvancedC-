@@ -1,4 +1,5 @@
 ﻿using Assignment_02_AdvancedC_.product;
+using System.Reflection.Emit;
 
 namespace Assignment_02_AdvancedC_
 {
@@ -93,6 +94,28 @@ namespace Assignment_02_AdvancedC_
 
             //Action<List<Product>> PrintDetailed = Product.DetailedReport;
             //PrintDetailed(catalog);
+
+            #endregion
+
+            #region Q5) => Task 03 Custom Report Generator(3.2 Transform Products)
+
+            //// Scenario 3
+
+            //List<string> summaryList = Product.TransformProducts(catalog, product => $"{product.Name} (${product.Price})");
+
+            //Console.WriteLine("--- Summary List ---");
+            //foreach (string result in summaryList)
+            //    Console.WriteLine(result);
+
+            //Console.WriteLine();
+
+            //// Scenario 4
+
+            //List<string> priceLabels = Product.TransformProducts(catalog, product => product.Price > 100 ? "Expensive!" : "Affordable");
+
+            //Console.WriteLine("--- Price Labels ---");
+            //for (int i = 0; i < catalog.Count; i++)
+            //    Console.WriteLine($"{catalog[i].Name}: {priceLabels[i]}");
 
             #endregion
 

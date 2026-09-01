@@ -42,6 +42,16 @@ namespace Assignment_02_AdvancedC_.product
                 Console.WriteLine($"[{pro.Category}] {pro.Name} | Price:${pro.Price} | Stock:{pro.Stock}");
         }
 
+        public static List<string> TransformProducts(List<Product> products, Func<Product, string> func)
+        {
+            List<string> Listproducts = new List<string>();
+
+            foreach (Product pro in products)
+                Listproducts.Add((string)func(pro));
+
+            return Listproducts;
+        }
+
         //public static bool IsElectronics(Product product) => (product.Category == "Electronics") ? true : false;
         //public static bool IsCheaperThan50(Product product) => (product.Price < 50 && product.Price > 0) ? true : false;
         //public static bool IsInStock(Product product) => (product.Stock > 0) ? true : false;
