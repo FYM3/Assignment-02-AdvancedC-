@@ -52,6 +52,19 @@ namespace Assignment_02_AdvancedC_.product
             return Listproducts;
         }
 
+        public static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
+        { 
+            List<Product> filteredProducts = new List<Product>();
+
+            foreach (Product pro in products)
+            {
+                if (predicate(pro))
+                    filteredProducts.Add(pro);
+            }
+
+            return filteredProducts;
+        }
+
         //public static bool IsElectronics(Product product) => (product.Category == "Electronics") ? true : false;
         //public static bool IsCheaperThan50(Product product) => (product.Price < 50 && product.Price > 0) ? true : false;
         //public static bool IsInStock(Product product) => (product.Stock > 0) ? true : false;
